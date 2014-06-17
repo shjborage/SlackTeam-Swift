@@ -7,12 +7,18 @@
 //
 
 import Cocoa
-
-//@objc(ViewController)
+import WebKit
 
 class ViewController: NSViewController {
                             
-//  @IBOutlet var mainWebView : WebView
+  @IBOutlet var mainWebView : WebView
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    mainWebView.mainFrameURL = "http://saick.net"
+    mainWebView.reload(nil)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()

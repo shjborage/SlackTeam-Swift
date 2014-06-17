@@ -13,6 +13,8 @@
 		A091C0D119470D1200711D6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A091C0D019470D1200711D6A /* Images.xcassets */; };
 		A091C0D419470D1200711D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A091C0D219470D1200711D6A /* Main.storyboard */; };
 		A091C0E019470D1200711D6A /* SlackTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091C0DF19470D1200711D6A /* SlackTeamTests.swift */; };
+		A0A57359195016960044EA93 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A57358195016960044EA93 /* WebKit.framework */; };
+		A0A5735B1950169D0044EA93 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A5735A1950169D0044EA93 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A091C0D919470D1200711D6A /* SlackTeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackTeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A091C0DE19470D1200711D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A091C0DF19470D1200711D6A /* SlackTeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackTeamTests.swift; sourceTree = "<group>"; };
+		A0A57358195016960044EA93 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A0A5735A1950169D0044EA93 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A5735B1950169D0044EA93 /* AppKit.framework in Frameworks */,
+				A0A57359195016960044EA93 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A091C0C719470D1200711D6A /* SlackTeam */,
+				A0A5735C195016B00044EA93 /* Frameworks */,
 				A091C0DC19470D1200711D6A /* SlackTeamTests */,
 				A091C0C619470D1200711D6A /* Products */,
 			);
@@ -110,6 +117,15 @@
 				A091C0DE19470D1200711D6A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0A5735C195016B00044EA93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5735A1950169D0044EA93 /* AppKit.framework */,
+				A0A57358195016960044EA93 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
