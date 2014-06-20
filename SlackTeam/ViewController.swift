@@ -16,7 +16,7 @@ class ViewController: NSViewController {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    mainWebView.mainFrameURL = "http://saick.net"
+    mainWebView.mainFrameURL = "http://slack.com"
     mainWebView.reload(nil)
   }
   
