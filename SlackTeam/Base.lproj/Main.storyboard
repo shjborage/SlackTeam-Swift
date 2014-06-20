@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A261i" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="6154.17"/>
+        <deployment defaultVersion="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.21"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="6154.21"/>
     </dependencies>
     <scenes>
         <!--Window Controller - SlackTeam-->
@@ -12,7 +13,7 @@
                     <window key="window" title="SlackTeam" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="100" y="100" width="1024" height="768"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
                         <value key="minSize" type="size" width="1024" height="768"/>
                         <view key="contentView" id="O92-4t-NeX">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -35,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <webView appearanceType="aqua" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-5A-TJE">
+                            <webView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-5A-TJE">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                                     <nil key="identifier"/>
@@ -43,6 +44,7 @@
                             </webView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dcb-5A-TJE" secondAttribute="trailing" id="DkF-R4-f7F"/>
                             <constraint firstItem="Dcb-5A-TJE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="LHM-D3-Msj"/>
                             <constraint firstItem="Dcb-5A-TJE" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Mes-gX-QbS"/>
                             <constraint firstAttribute="bottom" secondItem="Dcb-5A-TJE" secondAttribute="bottom" id="Ukc-c4-IJY"/>
